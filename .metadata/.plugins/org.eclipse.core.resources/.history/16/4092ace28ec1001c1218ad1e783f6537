@@ -1,0 +1,14 @@
+package shape;
+
+public class Square extends Shape{
+	private float area, perimeter;
+
+	public void computeGrade() {
+		area = side * side;
+	}
+	
+	public float getGarde() {
+		return area;
+	}
+	
+}

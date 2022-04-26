@@ -1,0 +1,10 @@
+package shape;
+import java.util.Scanner;
+import shape.Sqware;
+public class Command2{
+	public static void main(String[] args) {
+		float shape=0;
+		String Color;
+		
+	}
+}

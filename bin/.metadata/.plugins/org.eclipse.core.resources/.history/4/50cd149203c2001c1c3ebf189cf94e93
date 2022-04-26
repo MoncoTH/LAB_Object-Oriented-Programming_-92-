@@ -1,0 +1,39 @@
+package exchange;
+import java.io.*;
+import java.util.Scanner;
+
+public class Command {
+    public static void main(String[] args) {
+        String amount,output;
+        double money,baht=0;
+        Exchange ex = new Exchange();
+
+        try {
+            FileWriter outfile = new FileWriter("D:/JAVA_OOP/haiBaht.txt");
+            FileReader infile = new FileReader("D:/JAVA_OOP/ExchangeList.txt");
+            Scanner input = new Scanner(infile);
+            while(input.hasNext()) {
+
+                money = input.nextDouble();
+                amount = input.next();
+                output = String.format("%.2f %s = \t",money,amount);
+                outfile.write(output);
+
+                switch (amount) {
+                    case "USD" -> baht = ex.exchangeUSD(money);
+                    case "EURO" -> baht = ex.exchangeEURO(money);
+                    case "YEN" -> baht = ex.exchangeYEN(money);
+                    case "POUND" -> baht = ex.exchangePOUND(money);
+                }
+                output = String.format("%.2f Baht\n",baht);
+                outfile.write(output+"\r\n");
+            }
+            output = String.format(">>> Summation = %.2f Baht\n",ex.getsum());
+            outfile.write(output);
+            infile.close();
+            outfile.close();
+        } catch (IOException error){
+            error.printStackTrace();
+        }
+    }//end of main()
+}

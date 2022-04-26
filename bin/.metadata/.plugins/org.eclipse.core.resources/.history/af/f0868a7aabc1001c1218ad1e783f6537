@@ -1,0 +1,58 @@
+package grade;
+import java.io.*;
+import java.util.Scanner;
+public class Command2 {
+
+          public static void main(String[] args) {
+            System.out.println("my name!");
+            Scanner myScanner = new Scanner(new File("StudentGrades.txt"));
+      
+            String firstName = myScanner.next();
+            String lastName = myScanner.next();
+            String athlete=myScanner.next();
+                int lineNumber =1;
+                 while (myScanner.hasNextLine())
+                 {
+                     if(myScanner.hasNextLine())
+                     {
+                        myScanner.nextLine();
+      
+                     }
+                System.out.println(lineNumber + " "+ lastName + ", "+ firstName +
+                athlete);
+      
+              //      String firstName = myScanner.next();
+              //      String lastName = myScanner.next();
+              //      String athlete=myScanner.next();
+                    lineNumber++;  
+                }
+       }
+        public static double calculateAverage(int test1,int test2,int test3,int test4)
+        {
+          return (test1 + test2 + test3 + test4)/4;
+        }
+      
+        public static void displayGrade(double average,PrintStream outFile)
+        {
+          if (average >= 90)
+          {
+            outFile.println("A");
+          }
+          else if (average >= 80)
+          {
+            outFile.println("B");
+          }
+          else if (average >= 70)
+          {
+            outFile.println("C");
+          }
+          else if (average >= 60)
+          {
+            outFile.println("D");
+          }
+          else
+          {
+            outFile.println("F");
+          }
+          }
+}

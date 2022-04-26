@@ -1,0 +1,21 @@
+package shape;
+import java.util.Scanner;
+public class Command2 {
+	public static void main(String[] args) {
+
+		 float side=0;
+		String shapeColor;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter your course name: ");
+		shapeColor = sc.next();
+		System.out.print("Enter your score: ");
+		side = sc.nextFloat();
+
+		Square John = new Square();
+
+		John.setside(shapeColor, side);
+		John.computeGrade();
+
+		System.out.println("Square: color = " + John.getShapeColor() + "\n" + "Square: area = " + John.getGarde() + "\n" + "Square: perimeter = " + John.getnum1());
+		 }
+}

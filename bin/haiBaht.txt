@@ -1,0 +1,9 @@
+100.00 USD = 	3072.00 Baht
+
+100.00 EURO = 	4189.00 Baht
+
+100.00 YEN = 	3697.00 Baht
+
+100.00 POUND = 	4834.00 Baht
+
+>>> Summation = 15792.00 Baht

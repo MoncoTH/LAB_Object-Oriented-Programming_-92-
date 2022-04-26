@@ -1,0 +1,15 @@
+package shape;
+
+public class Shape {
+	 private String shapeColor;
+	protected float side;
+	public String getShapeColor() {
+		return shapeColor;
+	}
+	public void setShapeColor(String stdshapeColor, ) {
+		this.shapeColor = shapeColor;
+	}
+	
+	
+
+}

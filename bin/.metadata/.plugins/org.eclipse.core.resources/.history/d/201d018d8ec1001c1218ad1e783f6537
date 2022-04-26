@@ -1,0 +1,12 @@
+package shape;
+
+public class Square {
+	private float area, perimeter;
+
+	public void computeGrade() {
+		area = side * side;
+	}
+	
+
+	
+}

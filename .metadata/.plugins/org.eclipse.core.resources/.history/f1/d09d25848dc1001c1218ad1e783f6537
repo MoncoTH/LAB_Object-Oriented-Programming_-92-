@@ -1,0 +1,9 @@
+package shape;
+
+public class Shape {
+	 private String shapeColor;
+	protected float side;
+	
+	
+
+}

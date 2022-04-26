@@ -1,0 +1,16 @@
+package shape;
+import java.util.Scanner;
+import shape.Sqware;
+public class Command2{
+	public static void main(String[] args) {
+		float shape=0;
+		String Color;
+		try (Scanner sc = new Scanner(System.in)){
+		System.out.print("Enter the shape color: ");
+		Color = sc.next();
+		System.out.print("Enter the shape color: ");
+		shape = sc.nextFloat();
+	}
+	Square area = new Square();
+}
+}

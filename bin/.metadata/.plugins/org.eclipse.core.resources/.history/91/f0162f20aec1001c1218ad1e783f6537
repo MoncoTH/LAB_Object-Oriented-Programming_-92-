@@ -1,0 +1,12 @@
+package shape;
+
+public class Shape {
+	private String Color;
+	protected float shape;
+
+	public void setColor(String color, float shape) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

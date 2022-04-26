@@ -1,0 +1,13 @@
+package shape;
+
+public class Shape {
+	 private String shapeColor;
+	protected float shape;
+	public String getShapeColor() {
+		return shapeColor;
+	}
+	public void setside(String stdshapeColor, float stdside) {
+		shapeColor = stdshapeColor;
+		shape = stdside;
+	}
+}

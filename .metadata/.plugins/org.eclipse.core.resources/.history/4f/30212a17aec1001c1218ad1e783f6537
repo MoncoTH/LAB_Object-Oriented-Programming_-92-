@@ -1,0 +1,11 @@
+package shape;
+
+public class Shape {
+	private String Color;
+	protected float shape;
+
+	private String getColor(){
+		return Color;
+	}
+
+}

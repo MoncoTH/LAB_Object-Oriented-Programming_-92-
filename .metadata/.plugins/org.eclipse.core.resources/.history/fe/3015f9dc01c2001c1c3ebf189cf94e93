@@ -1,0 +1,71 @@
+package grade;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Command2 {
+    public static void main(String[] args) {
+
+        String name,grade,output;
+        String studygrade;
+        int score;
+        Scanner resultgrade = new Scanner(System.in);
+        System.out.print("Enter a grade: ");
+        studygrade = resultgrade.nextLine();
+
+        try {
+            FileReader infile = new FileReader("D:/DT Study/OOP_LAB/Lab6/Grade.txt");
+            try (Scanner input = new Scanner(infile)) {
+                while (input.hasNext()) {
+
+                    name = input.next();
+                    grade = input.next();
+                    score = input.nextInt();
+                    output = String.format("%s %d\n", name, score);
+
+
+                    switch (studygrade) {
+                        case "A":
+                            if (grade.equals("A"))
+                                System.out.print(output);
+                            break;
+                        case "B+":
+                            if (grade.equals("B+"))
+                                System.out.print(output);
+                            break;
+                        case "B":
+                            if (grade.equals("B"))
+                                System.out.print(output);
+                            break;
+                        case "C+":
+                            if (grade.equals("C+"))
+                                System.out.print(output);
+                            break;
+                        case "C":
+                            if (grade.equals("C"))
+                                System.out.print(output);
+                            break;
+                        case "D+":
+                            if (grade.equals("D+"))
+                                System.out.print(output);
+                            break;
+                        case "D":
+                            if (grade.equals("D"))
+                                System.out.print(output);
+                            break;
+                        case "F":
+                            if (grade.equals("F"))
+                                System.out.print(output);
+                            break;
+                        default:
+                            System.out.print(output);
+                            break;
+                    }
+
+                }
+            }
+        } catch (IOException error) {
+            error.printStackTrace();
+        }
+    }
+}

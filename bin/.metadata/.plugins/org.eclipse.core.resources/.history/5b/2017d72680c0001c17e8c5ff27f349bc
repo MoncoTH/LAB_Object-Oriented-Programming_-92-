@@ -1,0 +1,22 @@
+package shape;
+
+public class Command2 {
+	public static void main(String[] args) {
+
+		 float side=0;
+		String shapeColor;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the shape color: ");
+		course = sc.next();
+		System.out.print("Enter the square’s side: ");
+		score = sc.nextFloat();
+
+		Square John = new Square();
+
+		John.setScore(shapeColor, side);
+		John.computeGrade();
+
+		System.out.println("You get Grade " + John.getColor() + " in " + John.getCourse());
+		 }
+
+}

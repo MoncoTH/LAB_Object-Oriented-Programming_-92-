@@ -1,0 +1,9 @@
+package shape;
+
+public class Square {
+	private float side;
+	public float area() {
+		
+	}
+	
+}

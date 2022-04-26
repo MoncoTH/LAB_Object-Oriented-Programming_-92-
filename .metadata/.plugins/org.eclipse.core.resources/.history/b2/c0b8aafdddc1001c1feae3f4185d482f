@@ -1,0 +1,23 @@
+package test;
+
+import java.util.Scanner;
+
+public class command1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        char first;
+        String name;
+        int age,born;
+       protected int YEAR = 2554;
+
+        System.out.print("Name? ");
+        name = input.nextLine();
+        System.out.print("odl? ");
+        age = input.nextInt();
+        born = YEAR-age;
+        first = name.charAt(1);
+        System.out.println("h w b in "+born+".");
+        System.out.println("h n g c is "+first+".");
+
+    }
+}
